@@ -1,3 +1,5 @@
+import { StandingsPage } from './../pages/standings/standings';
+import { TeamHomePage } from './../pages/team-home/team-home';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -13,9 +15,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     MyTeamsPage,
     TournamentsPage,
+    TeamHomePage,
+    StandingsPage,
     TeamsPage,
-    TeamDetailPage,
-
+    TeamDetailPage
   ],
   imports: [
     BrowserModule,
@@ -26,6 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     MyTeamsPage,
     TournamentsPage,
+    TeamHomePage,
+    StandingsPage,
     TeamsPage,
     TeamDetailPage
   ],

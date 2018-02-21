@@ -1,10 +1,10 @@
-import { TeamHomePage } from './../team-home/team-home';
+import { StandingsPage } from './../standings/standings';
 import { TeamDetailPage } from './../team-detail/team-detail';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the TeamsPage page.
+ * Generated class for the TeamHomePage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -12,25 +12,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-teams',
-  templateUrl: 'teams.html',
+  selector: 'page-team-home',
+  templateUrl: 'team-home.html',
 })
-export class TeamsPage {
+export class TeamHomePage {
 
-  teams = [
-    {id:1,name:"HC Elite"},
-    {id:2,name:"The Bears"},
-    {id:3,name:"White Foxes"},
-  ]
+  teamDetailTab = TeamDetailPage;
+  standingsTab = StandingsPage;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TeamsPage');
-  }
-
-  itemTapped($event,team){
-    this.navCtrl.push(TeamHomePage,team);
+    console.log('ionViewDidLoad TeamHomePage');
   }
 
 }
