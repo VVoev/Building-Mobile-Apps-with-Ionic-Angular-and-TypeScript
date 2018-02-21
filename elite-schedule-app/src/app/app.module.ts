@@ -1,3 +1,5 @@
+import { EliteApi } from './shared/elite-api.service';
+import { HttpModule } from '@angular/http';
 import { StandingsPage } from './../pages/standings/standings';
 import { TeamHomePage } from './../pages/team-home/team-home';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +24,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -37,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
+    EliteApi,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

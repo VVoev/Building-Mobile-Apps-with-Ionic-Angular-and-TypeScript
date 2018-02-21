@@ -2,6 +2,7 @@ import { StandingsPage } from './../standings/standings';
 import { TeamDetailPage } from './../team-detail/team-detail';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MyTeamsPage } from '../pages';
 
 /**
  * Generated class for the TeamHomePage page.
@@ -27,6 +28,10 @@ export class TeamHomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamHomePage');
+  }
+
+  goHome(){
+    this.navCtrl.popToRoot();
   }
 
 }

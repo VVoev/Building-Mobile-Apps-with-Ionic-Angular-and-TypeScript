@@ -1,3 +1,4 @@
+import { EliteApi } from './shared/elite-api.service';
 import { MyTeamsPage } from './../pages/my-teams/my-teams';
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
@@ -6,7 +7,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { TournamentsPage } from '../pages/pages';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers:[
+  ]
 })
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
