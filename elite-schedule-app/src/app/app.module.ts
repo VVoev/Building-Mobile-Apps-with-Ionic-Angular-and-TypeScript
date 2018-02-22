@@ -1,3 +1,4 @@
+import { GamePage } from './../pages/game/game';
 import { EliteApi } from './shared/elite-api.service';
 import { HttpModule } from '@angular/http';
 import { StandingsPage } from './../pages/standings/standings';
@@ -20,7 +21,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TeamHomePage,
     StandingsPage,
     TeamsPage,
-    TeamDetailPage
+    TeamDetailPage,
+    GamePage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TeamHomePage,
     StandingsPage,
     TeamsPage,
-    TeamDetailPage
+    TeamDetailPage,
+    GamePage
   ],
   providers: [
     StatusBar,
