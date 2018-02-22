@@ -73,6 +73,7 @@ $colors: (
 @import "ionic.theme.default";
 
 
+
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
@@ -86,3 +87,6 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+//Custom
+@import '../pages/my-teams/my-teams.scss'
